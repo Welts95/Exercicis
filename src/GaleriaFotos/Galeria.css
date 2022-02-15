@@ -1,0 +1,29 @@
+.Container {
+  border: 5px solid rgba(97, 97, 97, 0.747);
+  padding: 10px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 610px;
+  height: auto;
+  background-color: rgba(158, 158, 158, 0.384);
+  border-radius: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  width: 610px;
+  column-gap: 10px;
+  row-gap: 10px;
+  align-items: flex-start;
+}
+.Imatge {
+  width: 100%;
+  height: 940px;
+}
+.Imatge img {
+  width: 100%;
+  height: 100%;
+}
+.Imatge-graella {
+  width: 300px;
+  height: 120px;
+}

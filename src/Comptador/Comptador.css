@@ -1,0 +1,44 @@
+.Container {
+  border: 5px solid rgba(97, 97, 97, 0.747);
+  padding: 10px 10px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 610px;
+  height: auto;
+  background-color: rgba(158, 158, 158, 0.384);
+  border-radius: 15px;
+}
+.Display {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 7px;
+  width: 100%;
+  height: auto;
+  margin: 5px;
+  background-color: rgb(87, 86, 86);
+  font-size: 50px;
+  color: white;
+}
+.Botonera {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  width: 610px;
+  column-gap: 50px;
+  row-gap: 10px;
+  align-items: flex-start;
+  justify-content: center;
+}
+.Boton1,
+.Boton5 {
+  height: 90px;
+  font-size: 50px;
+}
+
+.Boton1 {
+  width: 250px;
+}
+.Boton5 {
+  width: 90%;
+  margin: 0 5px 0 5px;
+}
