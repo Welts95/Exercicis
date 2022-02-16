@@ -16,17 +16,17 @@ export default function Galeriafotos() {
     "https://www.solofondos.com/wp-content/uploads/2016/09/wallpapers-primavera-600x375.jpg",
   ];
 
-  const [graella, setGraella] = useState("Container");
+  const [graella, setGraella] = useState("ContainerGaleria");
   const [imatge, setImatge] = useState();
 
   const cambiarImg = (imatgeClicada) => {
-    graella === "Container"
+    graella === "ContainerGaleria"
       ? (setGraella("Imatge"), setImatge(imatgeClicada))
-      : (setGraella("Container"), setImatge());
+      : (setGraella("ContainerGaleria"), setImatge());
   };
   return (
     <>
-      {graella === "Container" ? (
+      {graella === "ContainerGaleria" ? (
         <>
           <h1>1. Graella de fotos</h1>
           <div className={graella}>

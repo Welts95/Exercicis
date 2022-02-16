@@ -1,34 +1,41 @@
+/* eslint-disable default-case */
+/* eslint-disable no-unused-expressions */
 import { useState } from "react";
 import "./Acordio.css";
-
-function MostrarTexts(titols) {
-  return (
-    <div>
-      {/*titols.map((n) => (
-        <label>{n}</label>
-      ))*/}
-    </div>
-  );
-}
+import MostrarTexts from "./MostrarTexts";
 
 export default function Acordio() {
-  const titols = [
-    { titol: "Capítol 1", text: "Contingut del primer capítol" },
-    { titol: "Capítol 2", text: "Contingut del segon capítol" },
-    { titol: "Capítol 3", text: "Contingut del tercer capítol" },
-    { titol: "Capítol 4", text: "Contingut del quart capítol" },
-    { titol: "Capítol 5", text: "Contingut del cinqué capítol" },
-    { titol: "Capítol 6", text: "Contingut del sisé capítol" },
-    { titol: "Capítol 7", text: "Contingut del seté capítol" },
+  const posts = [
+    { id: 1, titol: "Capítol 1", text: "Contingut del primer capítol" },
+    { id: 2, titol: "Capítol 2", text: "Contingut del segon capítol" },
+    { id: 3, titol: "Capítol 3", text: "Contingut del tercer capítol" },
+    { id: 4, titol: "Capítol 4", text: "Contingut del quart capítol" },
+    { id: 5, titol: "Capítol 5", text: "Contingut del cinqué capítol" },
+    { id: 6, titol: "Capítol 6", text: "Contingut del sisé capítol" },
+    { id: 7, titol: "Capítol 7", text: "Contingut del seté capítol" },
   ];
 
-  let [contador, setContador] = useState();
+  const [clase, setClase] = useState("Amagar");
+  const [titol, setTitol] = useState(null);
+  const [titolClicat, setTitolClicat] = useState(null);
+
+  const MostrarContingut = (titolClicat, id) => {
+    clase === "Contingut"
+      ? (setClase("Amagar"), setTitol(null))
+      : (setClase("Contingut"), setTitol(titolClicat), setTitolClicat(id));
+  };
 
   return (
     <>
       <h1>3. Acordió</h1>
-      <div className="Container">
-        <MostrarTexts titols={titols} />
+      <div className="ContainerAcordio">
+        <MostrarTexts
+          posts={posts}
+          clicat={MostrarContingut}
+          clase={clase}
+          titol={titol}
+          id={titolClicat}
+        />
       </div>
     </>
   );

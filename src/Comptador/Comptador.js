@@ -14,7 +14,7 @@ export default function Comptador() {
   return (
     <>
       <h1>2. Comptador</h1>
-      <div className="Container">
+      <div className="ContainerComptador">
         <div className="Display">{contador}</div>
         <div className="Botonera">
           <button className="Boton1" onClick={() => operacio(suma1)}>

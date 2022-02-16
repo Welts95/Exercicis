@@ -1,5 +1,5 @@
-.Container {
-  border: 5px solid rgba(97, 97, 97, 0.747);
+.ContainerAcordio {
+  border: 5px solid rgba(206, 205, 205, 0.747);
   padding: 10px 10px;
   margin-right: auto;
   margin-left: auto;
@@ -8,24 +8,23 @@
   background-color: rgba(158, 158, 158, 0.384);
   border-radius: 15px;
 }
-.Display {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  border-radius: 7px;
-  width: 100%;
-  height: auto;
-  margin: 5px;
-  background-color: rgb(87, 86, 86);
-  font-size: 50px;
-  color: white;
+.Titol {
+  text-align: left;
+  margin-bottom: 3px;
+  border: 2px solid rgba(0, 0, 0, 0.171);
+  border-radius: 10px;
+  padding-left: 10px;
+  background-color: rgba(161, 174, 185, 0.438);
+  cursor: pointer;
 }
-.Botonera {
-  display: flex;
-  flex-wrap: wrap;
-  align-content: space-between;
-  width: 610px;
-  column-gap: 50px;
-  row-gap: 10px;
-  align-items: flex-start;
-  justify-content: center;
+.Titol label {
+  font-size: 35px;
+  font-weight: bold;
+  font-style: italic;
+}
+.Amagar {
+  display: none;
+}
+.Contingut {
+  display: block;
 }

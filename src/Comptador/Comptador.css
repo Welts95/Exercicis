@@ -1,4 +1,4 @@
-.Container {
+.ContainerComptador {
   border: 5px solid rgba(97, 97, 97, 0.747);
   padding: 10px 10px;
   margin-right: auto;
@@ -12,8 +12,6 @@
   padding-top: 10px;
   padding-bottom: 10px;
   border-radius: 7px;
-  width: 100%;
-  height: auto;
   margin: 5px;
   background-color: rgb(87, 86, 86);
   font-size: 50px;
