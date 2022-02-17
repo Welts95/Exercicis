@@ -2,6 +2,7 @@
 /* eslint-disable no-unused-expressions */
 import { useState } from "react";
 import "./Carrusel.css";
+import MostrarBarraInferior from "./MostrarBarraInferior";
 import MostrarImatge from "./MostrarImatge";
 
 export default function Carrusel() {
@@ -16,16 +17,35 @@ export default function Carrusel() {
     "https://i.redd.it/uxi6ewe1ac561.jpg",
   ];
   const [imatgeActual, setImatgeActual] = useState(imatges[0]);
+  const [idActual, setId] = useState(0);
 
-  const cambiarImg = (imatgeClicada) => {
-    setImatgeActual(imatgeClicada);
+  const cambiarImg = (accio) => {
+    idActual + accio >= 0 && idActual + accio <= imatges.length - 1
+      ? (setId(idActual + accio), setImatgeActual(imatges[idActual + accio]))
+      : null;
+  };
+
+  const imatgeClicada = (imatge, clicat) => {
+    setImatgeActual(imatge);
+    setId(clicat);
   };
 
   return (
     <>
       <h1>4. Carrusel</h1>
       <div className="ContenedorCarrusel">
+        <button className="Boton" onClick={() => cambiarImg(-1)}>
+          {"<"}
+        </button>
         <MostrarImatge imatge={imatgeActual} />
+        <button className="Boton" onClick={() => cambiarImg(+1)}>
+          {">"}
+        </button>
+        <MostrarBarraInferior
+          imatges={imatges}
+          id={idActual}
+          puntclicat={imatgeClicada}
+        />
       </div>
     </>
   );

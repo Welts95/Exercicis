@@ -1,0 +1,28 @@
+.ContainerToggleButton17F {
+  border: 5px solid rgba(97, 97, 97, 0.747);
+  padding: 10px 10px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 610px;
+  height: auto;
+  background-color: rgba(158, 158, 158, 0.384);
+  border-radius: 15px;
+}
+.ContainerToggleButton17F label {
+  font-size: 10px;
+}
+.ContainerToggleButton17F button {
+  font-size: 30px;
+  border-radius: 5px;
+  padding: 10px;
+  border: 2px dotted black;
+}
+.Verde {
+  background-color: rgb(52, 247, 3);
+}
+.BotonNormal {
+  background-color: azure;
+}
+.Texto {
+  font-size: 40px;
+}
