@@ -3,10 +3,12 @@
 import "./Galeria.css";
 import { useState } from "react";
 import Imatges from "./Imatge";
+import galeria1 from "./galeria1.jpg";
+import galeria2 from "./galeria2.jpg";
 
 export default function Galeriafotos() {
   const imatges = [
-    "https://www.xtrafondos.com/wallpapers/paisaje-digital-en-atardecer-5846.jpg",
+    galeria1,
     "http://wallpaperhd.biz/wp-content/uploads/2013/06/Corcega-Francia-wallpaper-hd-1024x576.jpg",
     "http://wallpaperhd.biz/wp-content/uploads/2013/01/wallpaper-hd-nature-02-800x600.jpg",
     "http://wallpaperhd.biz/wp-content/uploads/2013/01/Sky_and_River_wallpaper-hd-800x600.jpg",

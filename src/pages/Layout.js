@@ -5,31 +5,32 @@ export default function Layout() {
   return (
     <>
       <header>Exercicis React</header>
-      <div class="HolyGrail-body">
-        <main class="HolyGrail-content">
+      <div className="HolyGrail-body">
+        <main className="HolyGrail-content">
           <Outlet />
         </main>
-        <nav class="HolyGrail-nav">
+        <nav className="HolyGrail-nav">
           <ul>
             <li>
-              <Link to="/">Home</Link>
+              <Link to="/">🏠 Home</Link>
             </li>
-
             {llista.map((item) => (
               <li>
-                <Link to={item.path}>{item.titol}</Link>
+                <Link key={item} to={item.path}>
+                  {item.titol}
+                </Link>
               </li>
             ))}
           </ul>
         </nav>
-        <aside class="HolyGrail-ads">
+        <aside className="HolyGrail-ads">
           Google Ads
           <br />
           Por qué este anuncio?
         </aside>
       </div>
       <footer>
-        by <b>Gerard Hueltes</b>
+        by <b>Gerard Hueltes™</b>
       </footer>
     </>
   );
