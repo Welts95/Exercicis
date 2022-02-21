@@ -32,7 +32,7 @@ export default function Carrusel() {
 
   return (
     <>
-      <h1>4. Carrusel</h1>
+      <h1>Carrusel</h1>
       <div className="ContenedorCarrusel">
         <button className="Boton" onClick={() => cambiarImg(-1)}>
           {"<"}

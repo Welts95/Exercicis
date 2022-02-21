@@ -13,7 +13,7 @@ export default function Comptador() {
   };
   return (
     <>
-      <h1>2. Comptador</h1>
+      <h1>Comptador</h1>
       <div className="ContainerComptador">
         <div className="Display">{contador}</div>
         <div className="Botonera">

@@ -28,7 +28,7 @@ export default function Galeriafotos() {
     <>
       {graella === "ContainerGaleria" ? (
         <>
-          <h1>1. Graella de fotos</h1>
+          <h1>Graella de fotos</h1>
           <div className={graella}>
             <Imatges galeria={imatges} clicat={cambiarImg} />
           </div>

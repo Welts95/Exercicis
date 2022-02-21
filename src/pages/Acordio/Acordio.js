@@ -27,7 +27,7 @@ export default function Acordio() {
 
   return (
     <>
-      <h1>3. Acordió</h1>
+      <h1>Acordió</h1>
       <div className="ContainerAcordio">
         <MostrarTexts
           posts={posts}

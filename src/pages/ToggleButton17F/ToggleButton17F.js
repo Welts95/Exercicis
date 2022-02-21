@@ -19,7 +19,7 @@ export default function ToggleButton17F() {
 
   return (
     <>
-      <h1>5. Toggle Button *17F</h1>
+      <h1>Toggle Button *17F</h1>
       <div className="ContainerToggleButton17F">
         <button
           className={color}
