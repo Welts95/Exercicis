@@ -3,19 +3,25 @@
 import "./Galeria.css";
 import { useState } from "react";
 import Imatges from "./Imatge";
-import galeria1 from "./galeria1.jpg";
-import galeria2 from "./galeria2.jpg";
+import galeria1 from "./images/galeria1.jpg";
+import galeria2 from "./images/galeria2.jpg";
+import galeria3 from "./images/galeria3.jpg";
+import galeria4 from "./images/galeria4.jpg";
+import galeria5 from "./images/galeria5.jpg";
+import galeria6 from "./images/galeria6.jpg";
+import galeria7 from "./images/galeria7.jpg";
+import galeria8 from "./images/galeria8.jpg";
 
 export default function Galeriafotos() {
   const imatges = [
     galeria1,
-    "http://wallpaperhd.biz/wp-content/uploads/2013/06/Corcega-Francia-wallpaper-hd-1024x576.jpg",
-    "http://wallpaperhd.biz/wp-content/uploads/2013/01/wallpaper-hd-nature-02-800x600.jpg",
-    "http://wallpaperhd.biz/wp-content/uploads/2013/01/Sky_and_River_wallpaper-hd-800x600.jpg",
-    "http://wallpaperhd.biz/wp-content/uploads/2013/02/paisaje-cascada-580x340.jpg",
-    "https://www.teahub.io/photos/full/60-602133_fondos-paisajes-de-otoo.jpg",
-    "https://portugalinmobiliariasur.cl/wp-content/uploads/2021/03/paisaje.jpg",
-    "https://www.solofondos.com/wp-content/uploads/2016/09/wallpapers-primavera-600x375.jpg",
+    galeria2,
+    galeria3,
+    galeria4,
+    galeria5,
+    galeria6,
+    galeria7,
+    galeria8,
   ];
 
   const [graella, setGraella] = useState("ContainerGaleria");
