@@ -20,7 +20,7 @@
 }
 .Imatge img {
   width: 100%;
-  height: 100%;
+  height: 65%;
   cursor: pointer;
 }
 .ContainerGaleria .Imatge-graella {
