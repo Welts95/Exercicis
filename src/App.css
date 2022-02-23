@@ -28,7 +28,7 @@ header {
 .HolyGrail-nav {
   /* put the nav on the left */
   order: -1;
-  font-size: 25px;
+  font-size: 21px;
 }
 .HolyGrail-nav li {
   text-decoration: none;

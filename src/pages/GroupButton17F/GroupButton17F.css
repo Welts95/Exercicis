@@ -1,4 +1,4 @@
-.ContainerToggleButton17F {
+.GroupButton17F {
   border: 5px solid rgba(97, 97, 97, 0.747);
   padding: 10px 10px;
   margin-right: auto;
@@ -8,21 +8,18 @@
   background-color: rgba(158, 158, 158, 0.384);
   border-radius: 15px;
 }
-.ContainerToggleButton17F label {
-  font-size: 10px;
-}
-.ContainerToggleButton17F button {
+
+.GroupButton17F button {
   font-size: 30px;
   border-radius: 5px;
   padding: 10px;
-  border: 3px dotted black;
+  border: 2px solid black;
+  cursor: pointer;
+  margin: 0 10px 0 10px;
 }
-.Verde {
-  background-color: rgb(52, 247, 3);
+.GroupButton17F__Premut {
+  background-color: rgb(255, 192, 109);
 }
-.BotonNormal {
+.GroupButton17F__BotonNormal {
   background-color: azure;
-}
-.Texto {
-  font-size: 40px;
 }

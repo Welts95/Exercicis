@@ -11,14 +11,9 @@ export default function Layout() {
         </main>
         <nav className="HolyGrail-nav">
           <ul>
-            <li>
-              <Link to="/">🏠 Home</Link>
-            </li>
-            {llista.map((item) => (
-              <li>
-                <Link key={item} to={item.path}>
-                  {item.titol}
-                </Link>
+            {llista.map((item, index) => (
+              <li key={index}>
+                <Link to={item.path}>{item.titol}</Link>
               </li>
             ))}
           </ul>

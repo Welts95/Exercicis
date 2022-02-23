@@ -19,13 +19,9 @@ export default function ToggleButton17F() {
 
   return (
     <>
-      <h1>Toggle Button *17F</h1>
+      <h1>Toggle Button</h1>
       <div className="ContainerToggleButton17F">
-        <button
-          className={color}
-          button
-          onClick={() => cambiarColor(botoClicat)}
-        >
+        <button className={color} onClick={() => cambiarColor(botoClicat)}>
           Descargar AQUÍ!
         </button>
         <br />
