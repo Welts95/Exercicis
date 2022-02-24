@@ -5,8 +5,8 @@ import MostrarArray from "./MostrarArray";
 
 export default function AfegirElements() {
   const [vector, setVector] = useState([10, 20, 30, 40, 50, 60, 70]);
-  const [num, setNum] = useState();
-  const [pos, setPos] = useState();
+  const [num, setNum] = useState("");
+  const [pos, setPos] = useState("");
 
   const afegirNum = (num, posicio) => {
     num !== null && num !== ""
