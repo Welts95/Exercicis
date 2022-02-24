@@ -9,6 +9,9 @@ import VectorEnters from "./VectorEnters/VectorEnters";
 import AfegirElements from "./AfegirElements/AfegirElements";
 import TreureElements from "./TreureElements/TreureElements";
 import ConcatenarArrays from "./ConcatenarArrays/ConcatenarArrays";
+import CounterApp from "./CounterRedux/CounterApp";
+import SumadorNumeros from "./SumadorNumeros/SumadorNumeros";
+import TipCalculator from "./TipCalculator/TipCalculator";
 
 const llista = [
   {
@@ -16,7 +19,7 @@ const llista = [
     titol: "🏠 Home",
   },
   {
-    path: "graellafotos",
+    path: "graella-fotos",
     titol: "🖼  Graella de Fotos",
     element: <Galeriafotos />,
   },
@@ -24,39 +27,54 @@ const llista = [
   { path: "acordio", titol: "🏮 Acordió", element: <Acordio /> },
   { path: "carrusel", titol: "🦲 Carrusel", element: <Carrusel /> },
   {
-    path: "togglebutton",
+    path: "toggle-button",
     titol: "🎭 Toggle Button",
     element: <ToggleButton17F />,
   },
   {
-    path: "groupbutton",
+    path: "group-button",
     titol: "👨‍👩‍👧‍👦 Group Button",
     element: <GroupButton17F />,
   },
   {
-    path: "rellotgedigital",
+    path: "sumador-numeros",
+    titol: "➕ Sumador de Números",
+    element: <SumadorNumeros />,
+  },
+  {
+    path: "rellotge-digital",
     titol: "⌚ Rellotge Digital",
     element: <RellotgeDigital />,
   },
   {
-    path: "vectorenters",
+    path: "tip-calculator",
+    titol: "💶 Tip Calculator",
+    element: <TipCalculator />,
+  },
+  {
+    path: "vector-enters",
     titol: "🔢 Vector Enters",
     element: <VectorEnters />,
   },
   {
-    path: "afegirelements",
+    path: "afegir-elements",
     titol: "📥 Afegir Elements",
     element: <AfegirElements />,
   },
   {
-    path: "treureelements",
+    path: "treure-elements",
     titol: "📤 Treure Elements",
     element: <TreureElements />,
   },
   {
-    path: "concatenararrays",
+    path: "concatenar-arrays",
     titol: "🤝 Concatenar Arrays",
     element: <ConcatenarArrays />,
+  },
+  {
+    path: "counter-usereducer-redux",
+    titol: "⚛	Counter useReducer Redux",
+    element: <CounterApp />,
   },
 ];
 

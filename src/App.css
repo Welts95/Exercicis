@@ -19,6 +19,10 @@ header {
   font-size: 25px;
 }
 
+.HolyGrail-nav ul {
+  padding-left: 10px;
+}
+
 .HolyGrail-nav,
 .HolyGrail-ads {
   /* 12em is the width of the columns */
