@@ -12,6 +12,7 @@ import ConcatenarArrays from "./ConcatenarArrays/ConcatenarArrays";
 import CounterApp from "./CounterRedux/CounterApp";
 import SumadorNumeros from "./SumadorNumeros/SumadorNumeros";
 import TipCalculator from "./TipCalculator/TipCalculator";
+import ToDoList from "./ToDoList/App";
 
 const llista = [
   {
@@ -75,6 +76,11 @@ const llista = [
     path: "counter-usereducer-redux",
     titol: "⚛	Counter useReducer Redux",
     element: <CounterApp />,
+  },
+  {
+    path: "to-do-list-redux",
+    titol: "To Do List Redux",
+    element: <ToDoList />,
   },
 ];
 
