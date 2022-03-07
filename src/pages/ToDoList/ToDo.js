@@ -1,4 +1,4 @@
-import "./App.css";
+import "./ToDo.css";
 import { useDispatch, useSelector } from "react-redux";
 import { useState } from "react";
 import {
@@ -42,9 +42,9 @@ function App() {
   };
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>TO DO LIST</h1>
+    <>
+      <h1>TO DO LIST</h1>
+      <div className="ContainerToDo">
         <ul>
           {todolist.map((n, i) => (
             <li key={i} className="Llista">
@@ -64,12 +64,18 @@ function App() {
             </li>
           ))}
         </ul>
-        Introdueix una tasca:<input value={text} onChange={setInput}></input>
+        Introdueix una tasca:
         <br />
-        <button onClick={comprovarText}>INTRODUIR</button>
-        <button onClick={deleteTasca}>BORRAR</button>
-      </header>
-    </div>
+        <input value={text} onChange={setInput}></input>
+        <button className="ToDo__button-afegir" onClick={comprovarText}>
+          INTRODUIR
+        </button>
+        <br />
+        <button className="ToDo__button" onClick={deleteTasca}>
+          BORRAR
+        </button>
+      </div>
+    </>
   );
 }
 

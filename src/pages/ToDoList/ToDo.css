@@ -1,0 +1,33 @@
+.ContainerToDo {
+  border: 5px solid rgba(117, 117, 117, 0.747);
+  padding: 10px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 610px;
+  height: auto;
+  background-color: rgba(189, 189, 189, 0.384);
+  border-radius: 15px;
+}
+
+.Icon_papelera,
+.Estat {
+  cursor: pointer;
+}
+
+.ToDo__button {
+  font-size: 20px;
+  margin-top: 10px;
+  width: 25%;
+}
+
+.Llista {
+  font-size: 30px;
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Estat {
+  margin-left: 10px;
+  margin-right: 5px;
+}

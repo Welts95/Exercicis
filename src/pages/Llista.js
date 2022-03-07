@@ -12,7 +12,7 @@ import ConcatenarArrays from "./ConcatenarArrays/ConcatenarArrays";
 import CounterApp from "./CounterRedux/CounterApp";
 import SumadorNumeros from "./SumadorNumeros/SumadorNumeros";
 import TipCalculator from "./TipCalculator/TipCalculator";
-import ToDoList from "./ToDoList/App";
+import ToDoList from "./ToDoList/ToDo";
 
 const llista = [
   {
@@ -79,7 +79,7 @@ const llista = [
   },
   {
     path: "to-do-list-redux",
-    titol: "To Do List Redux",
+    titol: "🧾 To Do List Redux",
     element: <ToDoList />,
   },
 ];
