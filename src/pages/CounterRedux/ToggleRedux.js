@@ -7,6 +7,7 @@ export function ToggleRedux() {
 
   return (
     <>
+      <h1>Toggle Redux</h1>
       Activat: {activat ? "SI" : "NO"} <br />
       <button onClick={() => dispatch(toggleActive())}>Togglejar</button>
       <button onClick={() => dispatch(off())}>Off</button>
