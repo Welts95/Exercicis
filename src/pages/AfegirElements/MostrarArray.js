@@ -1,10 +1,11 @@
 export default function MostrarArray({ array }) {
   return (
     <>
-      {"Vector: "}
+      {"Vector: "}[
       {array.map((n, index) => (
         <label key={n}>{n + (index !== array.length - 1 ? ", " : "")}</label>
       ))}
+      ]
     </>
   );
 }

@@ -1,22 +1,21 @@
 import "./TresEnRatlla.css";
+import { juga, reinicia } from "./actions/actions";
 
 import {
-  getTaulell,
-  juga,
-  gethihaGuanyador,
-  getCasellesGuanyadores,
-  reinicia,
-  getFiDePartida,
-} from "./reducers/tresEnRatllaReducer";
+  selectTaulell,
+  selecthihaGuanyador,
+  selectCasellesGuanyadores,
+  selectFiDePartida,
+} from "./selectors/selectors";
 import { useDispatch, useSelector } from "react-redux";
 
 function App() {
   const dispatch = useDispatch();
-  const taulell = useSelector(getTaulell);
-  const hihaGuanyador = useSelector(gethihaGuanyador);
-  const casellesGuanyadores = useSelector(getCasellesGuanyadores) ?? [];
+  const taulell = useSelector(selectTaulell);
+  const hihaGuanyador = useSelector(selecthihaGuanyador);
+  const casellesGuanyadores = useSelector(selectCasellesGuanyadores) ?? [];
   const [casellesGuanyadoraA] = casellesGuanyadores;
-  const fiDePartida = useSelector(getFiDePartida);
+  const fiDePartida = useSelector(selectFiDePartida);
 
   return (
     <>

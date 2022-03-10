@@ -8,12 +8,13 @@ export default function NoRepetits({ array }) {
   return (
     <>
       {"Vector sense repetits: "}
-      <br />
+      <br />[
       {arrayNoRepes.map((n, index) => (
         <label key={n}>
           {n + (index !== arrayNoRepes.length - 1 ? ", " : "")}
         </label>
       ))}
+      ]
       <br />
       <br />
     </>

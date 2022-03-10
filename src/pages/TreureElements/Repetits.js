@@ -10,10 +10,11 @@ export default function Repetits({ array }) {
   return (
     <>
       {"Vector dels repetits: "}
-      <br />
+      <br />[
       {repetits.map((n, index) => (
         <label key={n}>{n + (index !== repetits.length - 1 ? ", " : "")}</label>
       ))}
+      ]
       <br />
       <br />
     </>

@@ -12,11 +12,13 @@ export default function ConcatenarArrays() {
     }
     return (
       <>
+        [
         {concatenada.map((n, index) => (
           <label key={n}>
             {n + (index !== concatenada.length - 1 ? ", " : "")}
           </label>
         ))}
+        ]
       </>
     );
   };
