@@ -13,6 +13,7 @@ import CounterApp from "./CounterRedux/CounterApp";
 import SumadorNumeros from "./SumadorNumeros/SumadorNumeros";
 import TipCalculator from "./TipCalculator/TipCalculator";
 import ToDoList from "./ToDoList/ToDo";
+import TresEnRatlla from "./TresEnRatlla/TresEnRatlla";
 
 const llista = [
   {
@@ -41,6 +42,11 @@ const llista = [
     path: "sumador-numeros",
     titol: "➕ Sumador de Números",
     element: <SumadorNumeros />,
+  },
+  {
+    path: "tres-en-ratlla",
+    titol: "❌⭕❌ Tres en Ratlla",
+    element: <TresEnRatlla />,
   },
   {
     path: "rellotge-digital",

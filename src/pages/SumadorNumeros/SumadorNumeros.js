@@ -18,13 +18,14 @@ export default function SumadorNumeros() {
       <div className="SumadorNumeros__Container">
         <label>{"Valor: "}</label>
         <input
+          className="SumadorNumeros__Input"
           type="number"
           value={num}
           onChange={(event) => setNum(event.target.value)}
         />
         <br />
         <label>{"Total: "}</label>
-        <input type="number" value={total} />
+        <input className="SumadorNumeros__Input" type="number" value={total} />
         <br />
         <button
           className="SumadorNumeros__Boton"

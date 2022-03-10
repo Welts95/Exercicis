@@ -11,7 +11,10 @@ export function reset() {
 export function counter(state = 0, action) {
   switch (action.type) {
     case INCREMENT:
-      return state + action.amount;
+      if (state + action.amount >= 0 && state + action.amount <= 10) {
+        return state + action.amount;
+      }
+      return state;
     case RESET:
       return 0;
     default:

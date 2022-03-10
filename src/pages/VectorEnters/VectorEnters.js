@@ -22,13 +22,14 @@ export default function VectorEnters() {
     <>
       <h1>Vector d'Enters</h1>
       <div className="VectorEnters">
-        {"Vector: "}
+        {"Vector: "}[
         {vector.map((n, index) => (
           <label key={n}>
             {n + (index !== vector.length - 1 ? ", " : "")}
             {operacions(n)}
           </label>
         ))}
+        ]
         <br />
         <br />
         <label>

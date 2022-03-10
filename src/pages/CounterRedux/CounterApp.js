@@ -13,7 +13,7 @@ export default function CounterApp() {
         <CounterUseReducer />
         <CounterUseReducer />
         <CounterUseRedux />
-        <CounterReduxIncrement amount="+33" />
+        <CounterReduxIncrement amount="+5" />
       </>
     </Provider>
   );
