@@ -2,8 +2,14 @@ export default function Boton({ botons, clase, clicat }) {
   return (
     <>
       {botons.map((n, index) => (
-        <button className={clase} key={n} onClick={() => clicat(n)}>
-          {/*PASAR VARIAS FUNCIONES OJTIO!*/}
+        <button
+          className={
+            clase +
+            (botons.includes(index) ? " GroupButton17F-boton--premut" : "")
+          }
+          key={index}
+          onClick={() => clicat(n)}
+        >
           {n}
         </button>
       ))}

@@ -17,9 +17,9 @@
   cursor: pointer;
   margin: 0 10px 0 10px;
 }
-.GroupButton17F__Premut {
+.GroupButton17F-boton--premut {
   background-color: rgb(255, 192, 109);
 }
-.GroupButton17F__BotonNormal {
+.GroupButton17F-boton {
   background-color: azure;
 }

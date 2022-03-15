@@ -3,8 +3,8 @@ import { useState } from "react";
 import "./ToggleButton17F.css";
 
 export default function ToggleButton17F() {
-  const textbotoclicat = "😈Has hecho click! Infectando sistema operativo...😈";
-  const textbotonoclicat = "😢Aún no has hecho click en la descarga...😢";
+  const textbotoclicat = "😈Lo has activado! Infectando sistema operativo...😈";
+  const textbotonoclicat = "😢El botón de descarga no está activo...😢";
   const [botoClicat, setBotoClicat] = useState(false);
   const [color, setColor] = useState("BotonNormal");
   const [display, setDisplay] = useState(textbotonoclicat);
