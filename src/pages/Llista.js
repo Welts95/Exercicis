@@ -14,6 +14,7 @@ import SumadorNumeros from "./SumadorNumeros/SumadorNumeros";
 import TipCalculator from "./TipCalculator/TipCalculator";
 import ToDoList from "./ToDoList/ToDo";
 import TresEnRatlla from "./TresEnRatlla/TresEnRatlla";
+import Calculadora from "./Calculadora/Calculadora";
 
 const llista = [
   {
@@ -25,7 +26,7 @@ const llista = [
     titol: "🖼  Graella de Fotos",
     element: <Galeriafotos />,
   },
-  { path: "comptador", titol: "🧮 Comptador", element: <Comptador /> },
+  { path: "comptador", titol: "0️⃣ Comptador", element: <Comptador /> },
   { path: "acordio", titol: "🏮 Acordió", element: <Acordio /> },
   { path: "carrusel", titol: "🦲 Carrusel", element: <Carrusel /> },
   {
@@ -45,8 +46,13 @@ const llista = [
   },
   {
     path: "tres-en-ratlla",
-    titol: "❌⭕❌ Tres en Ratlla",
+    titol: "🧇 Tres en Ratlla",
     element: <TresEnRatlla />,
+  },
+  {
+    path: "calculadora",
+    titol: "🧮 Calculadora",
+    element: <Calculadora />,
   },
   {
     path: "rellotge-digital",
