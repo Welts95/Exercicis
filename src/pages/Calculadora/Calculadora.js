@@ -49,7 +49,7 @@ export default function Calculadora() {
     <div className="Calculadora">
       <h1>Calculadora</h1>
       <div className="Calculadora-Container">
-        <h2>CASIO</h2>
+        <h2>CANIO</h2>
         <div className="Calculadora-Display">
           <div className="Calculadora-Historic">
             {historial.map((item, i) => {
