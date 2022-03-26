@@ -4,25 +4,21 @@ import "./GroupButton17F.css";
 import Boton from "./Boton";
 
 export default function GroupButton17F() {
-  const [display, setDisplay] = useState("CAP");
-  const [idActual, setId] = useState(0);
-
   const botons = ["Botó A", "Botó B", "Botó C"];
+
+  const [display, setDisplay] = useState("CAP");
+  const [clicat, setClicat] = useState("");
 
   const cambiarText = (text) => {
     display !== text ? setDisplay(text) : null;
+    clicat && display === text ? setClicat("") : setClicat(text);
   };
 
   return (
     <>
       <h1>Group Button</h1>
       <div className="GroupButton17F">
-        <Boton
-          botons={botons}
-          clase={"GroupButton17F-boton"}
-          clicat={cambiarText}
-          id={(idActual, setId)}
-        />
+        <Boton botons={botons} setColor={cambiarText} clicat={clicat} />
         <div className="GroupButton17F__Texto">{display}</div>
       </div>
     </>

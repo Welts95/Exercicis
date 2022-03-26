@@ -1,14 +1,15 @@
-export default function Boton({ botons, clase, clicat }) {
+export default function Boton({ botons, clicat, setColor }) {
   return (
     <>
       {botons.map((n, index) => (
         <button
           className={
-            clase +
-            (botons.includes(index) ? " GroupButton17F-boton--premut" : "")
+            n === clicat
+              ? "GroupButton17F-boton--premut"
+              : "GroupButton17F-boton"
           }
           key={index}
-          onClick={() => clicat(n)}
+          onClick={() => setColor(n)}
         >
           {n}
         </button>
